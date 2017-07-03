@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>mileum</title>
+<meta name="description" content="サイトの説明文">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="./js/jquery.pjax.js"></script>
+<script type="text/javascript">
+$(document).pjax('a.pjax', {
+  container:'#page',
+  fragment:'#page'
+});
+</script>
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div id="page">
+<header>
+	<div id="header_in" class="clearfix">
+		<h1 class="logo"><a class="pjax" href="./"><img src="icZeplin.svg" width="30" height="auto" alt="logo">mileum</a></h1>
+		<nav id="gNav">
+			<ul>
+				<li><a class="pjax" href="./service/">service</a></li>
+				<li><a class="pjax" href="./contact/">contact</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+<div id="main" class="top">
+<div class="contents">
+	<h1>Accerate<br>Refferal<br>Recruitment</h1>
+    <div class="wiki">
+	    <p class="txt clearfix">※Referral recruitment is a recruitment strategy that <br>encourages employees to refer contacts for specific positions. <br>It performs better than regular recruiting<span>-Wikipedia</span></p>
+	    <svg x="0" y="0" width="550" height="210" viewBox="0 0 550 210" xml:space="preserve">
+		  <polygon fill="#4a4a4a" points="50,0 0,210 550,0"/>
+		</svg>
+    </div>
+
+</div><!-- /.contents -->
+</div><!-- /#main -->
+<footer>
+<div id="footer_in" class="clearfix">
+	<p class="copyright">Copyright &copy; XXXXX All Rights Reserved.</p>
+	<nav id="lNav">
+		<ul>
+			<li><a href="./en/">English</a></li><li class="active">Japanese</li>
+		</ul>
+	</nav>
+</div><!-- /#footer_in -->
+</footer>
+
+</div>
+</body>
+</html>
