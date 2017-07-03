@@ -59,7 +59,7 @@ HEADER
 
 */
 header{ position:absolute; top:0; width:100%; z-index:999; border-bottom:1px solid #979797; background:#fff;}
-header #header_in{ min-width:720px; max-width:960px; margin:0 auto;}
+header #header_in{ min-width:720px; max-width:1960px; margin:0 auto;}
 header .logo{ float:left; padding:0 0 0 10px;}
 header .logo a{ font-size:36px; font-weight:bold; text-decoration:none;}
 header .logo a img{ margin-right:8px;}
@@ -82,7 +82,7 @@ FOOTER
 */
 footer{ margin:90px 0 0;}
 footer .copyright{ float:left; padding-left:10px; font-size:11px;}
-footer #footer_in{ min-width:720px; max-width:960px; margin:0 auto;}
+footer #footer_in{ min-width:720px; max-width:1960px; margin:0 auto;}
 #lNav{ float:right;}
 #lNav ul li{ display:inline-block; width:auto; text-align:left; vertical-align:middle; padding:0 10px 0 0;}
 #lNav ul li a{ text-decoration:none; font-weight:bold;}
@@ -100,7 +100,7 @@ MAIN
 TOP
 
 */
-#main.top{ min-width:720px; max-width:960px; width:auto; margin:0 auto;}
+#main.top{ min-width:720px; max-width:1960px; width:auto; margin:0 auto;}
 #main.top h1{ font-size:86px; color:#000; text-align:left; line-height:1.1; margin-left:50px;}
 .top .wiki{ margin:30px 0 0; position:relative;}
 .top .wiki .txt{ position:absolute; bottom:105px; left:80px; color:#fff; font-size:8px; line-height:1.2;
