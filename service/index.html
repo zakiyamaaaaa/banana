@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>サービス | mileum</title>
+<meta name="description" content="サイトの説明文">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="../js/jquery.pjax.js"></script>
+<script type="text/javascript">
+$(document).pjax('a.pjax', {
+  container:'#page',
+  fragment:'#page'
+});
+</script>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div id="page">
+<header>
+	<div id="header_in" class="clearfix">
+		<h1 class="logo"><a class="pjax" href="../"><img src="../icZeplin.svg" width="30" height="auto" alt="logo">milenim</a></h1>
+		<nav id="gNav">
+			<ul>
+				<li class="active"><a class="pjax" href="../service/">service</a></li>
+				<li><a class="pjax" href="../contact/">contact</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+<div id="main" class="service">
+<div class="contents">
+	<h1><span>事業内容</span></h1>
+    <p class="about">リファラル採用の活用を支援いたします</p>
+    
+    <div id="details">
+	    <div class="detail">
+	    	<div class="ttl">
+			    <h2>内容</h2><p>What</p>
+	        </div>
+	        <p class="txt">企業側はアプリとWebサービスを利用できます。
+登録されたリクルーターの採用活動を管理することができます</p>
+	    </div><!-- /.detail -->
+	    
+	    <div class="detail">
+	    	<div class="ttl">
+			    <h2>メリット</h2><p>Why</p>
+	        </div>
+	        <p class="txt">これまで各自にまかせていたリファラル採用を、管理するようにすることで
+効率的な採用を行うことができ、自社のビジネススピードを改善させる</p>
+	    </div><!-- /.detail -->
+	    
+	    <div class="detail">
+	    	<div class="ttl">
+			    <h2>使い方</h2><p>How</p>
+	        </div>
+	        <p class="txt">企業側はスマホアプリとウェブアプリを利用できます。
+ウェブアプリでは、各自のスマホアプリの進捗・状況を把握し、効率的な
+採用活動を行うことが出来ます。</p>
+	    </div><!-- /.detail -->
+	
+	    <div class="detail">
+	    	<div class="ttl">
+			    <h2>料金</h2><p>How much</p>
+	        </div>
+            <div class="txt_price">
+		        <p class="left"><span>¥0</span><em>/</em>月</p>
+		        <p class="right">現在デモ版をお試し提供しております。
+限定０円でご利用いただけます。</p>
+            </div>
+	    </div><!-- /.detail -->
+        <p class="btn"><a class="pjax" href="./trial_request/">デモ版をリクエストする</a></p>
+	</div><!-- /#details -->
+
+</div><!-- /.contents -->
+</div><!-- /#main -->
+
+<footer>
+<div id="footer_in" class="clearfix">
+	<p class="copyright">Copyright &copy; XXXXX All Rights Reserved.</p>
+	<nav id="lNav">
+		<ul>
+			<li><a href="../en/service/">English</a></li><li class="active">Japanese</li>
+		</ul>
+	</nav>
+</div><!-- /#footer_in -->
+</footer>
+
+</div>
+</body>
+</html>
