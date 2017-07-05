@@ -60,9 +60,12 @@ HEADER
 */
 header{ position:absolute; top:0; width:100%; z-index:999; border-bottom:1px solid #979797; background:#fff;}
 header #header_in{ min-width:720px; max-width:1960px; margin:0 auto;}
-header .logo{ float:left; padding:0 0 0 10px;}
+header .logo{ float:left; padding:10px 0 0 10px;}
 header .logo a{ font-size:36px; font-weight:bold;text-decoration:none;}
 header .logo a img{ margin-right:8px;}
+header .icon{ float:left; padding:10px 0 0px 10px;}
+header .icon a{ font-size:36px; font-weight:bold;text-decoration:none;}
+header .icon a img{ margin-right:8px;}
 header #gNav{ float:right;}
 header #gNav ul{ display:table; border-right:1px solid #979797;}
 header #gNav ul li{ display:table-cell; border-left:1px solid #979797;}
