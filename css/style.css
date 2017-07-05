@@ -18,7 +18,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	outline: 0;
 	font-weight: inherit;
 	font-style: inherit;
-	font-size: 16px;
+	font-size: 15px;
 	line-height:1.5;
 	color:#4a4a4a;
 	font-family: Arial, Helvetica, sans-serif;
@@ -125,8 +125,12 @@ SERVICE
 
 */
 .service .about{ font-size:14px; margin:10px 0 0;text-align: center;}
-.service #details{ padding:15px auto 0; margin:auto 0;}
-.service .detail{ margin:30px 30px 0;}
+.service #details{ padding:15px auto 0; margin:auto; display: inline-block;}
+/*.service .detail{ margin:30px 30px 0;}*/
+/*.service .detail{display: inline-block; width:200px; height:200px; background-color: red;}*/
+.service .detail{display: inline-block;border:0.5px solid black;width:40%;float:left; height:170px; padding:1.8%;}
+.service .detail:nth-child(odd){margin:10px 1% 10px 4%;}
+.service .detail:nth-child(even){margin:10px 4% 10px 1%;}
 .service .detail .ttl{ border-bottom:1px solid #979797; padding:0;}
 .service .detail .ttl h2{ display:inline-block; font-size:24px; font-weight:bold; vertical-align:baseline;}
 .service .detail .ttl p{ display:inline-block; margin:0 0 0 15px; font-weight:bold; vertical-align:baseline; font-style:italic;}
@@ -137,7 +141,7 @@ SERVICE
 .detail .txt_price .left{ width:150px; font-size:20px; font-weight:bold; color:#000; line-height:1.1; vertical-align:baseline;}
 .detail .txt_price .left span{ font-size:80px; font-weight:bold; color:#000; line-height:1.1; vertical-align:baseline;}
 .detail .txt_price .left em{ font-size:40px; font-weight:bold; color:#000; line-height:1.1; vertical-align:baseline;}
-.detail .txt_price .right{ font-size:18px; padding:10px 0 0;}
+.detail .txt_price .right{ font-size:15px; padding:10px 0 0;}
 
 
 /*
@@ -161,13 +165,25 @@ input[type="submit"] {
 -webkit-appearance: none;
 border-radius: 0;
 }
-.btn{ margin:30px 0 0;}
+/*.btn{width:1000px;background-color: gray;display: inline-block;}*/
 .btn a,
 .btn button,
 .btn input{ display:block; width:278px; text-decoration:none; font-size:20px; background:#fff; font-weight:bold; border:1px solid #979797; padding:10px 0; text-align:center; margin:0 auto;}
 .btn a:hover,
 .btn button:hover,
 .btn input:hover{ color:#fff; background:#4a4a4a;}
+.test-btn{
+font-size:0.75em;
+display:block;
+width:100px;
+padding-top:10px;
+padding-bottom:10px;
+text-align:center;
+border:2px solid;
+margin:0 auto;
+border-color:#aaaaaa #444444 #444444 #aaaaaa;
+}
+
 /* privacy */
 .privacy{ display:block; background:#eee; border: 1px solid #979797; padding:10px 20px; margin:20px 0 0;}
 .privacy dt{ border-bottom:1px solid #979797; padding:0 0 5px;}
@@ -226,6 +242,7 @@ position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300p
 
 #colorbox h1 span,
 #main h1 span{ font-weight:bold; font-size:32px; border-bottom:5px solid #000;}
+
 
 /* colorbox */
 
