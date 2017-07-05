@@ -18,17 +18,24 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	outline: 0;
 	font-weight: inherit;
 	font-style: inherit;
-	font-size: 16px;
+	font-size: 15px;
 	line-height:1.5;
 	color:#4a4a4a;
 	font-family: Arial, Helvetica, sans-serif;
+	font-family: serif;
 	vertical-align: baseline;
 }
+
+/*html, body { height:100%;}*/
+/*body{height: 100%;}*/
+/*html{height: 100%;margin:0;}*/
+/*body{height: 100%;margin:0;}*/
 /*
 
 SETUP
 
 */
+
 ul, ol { list-style: none;}
 img { border: none;}
 .clear { clear: both;}
@@ -60,9 +67,12 @@ HEADER
 */
 header{ position:absolute; top:0; width:100%; z-index:999; border-bottom:1px solid #979797; background:#fff;}
 header #header_in{ min-width:720px; max-width:1960px; margin:0 auto;}
-header .logo{ float:left; padding:0 0 0 10px;}
+header .logo{ float:left; padding:10px 0 0 10px;}
 header .logo a{ font-size:36px; font-weight:bold;text-decoration:none;}
 header .logo a img{ margin-right:8px;}
+header .icon{ float:left; padding:10px 0 0px 10px;}
+header .icon a{ font-size:36px; font-weight:bold;text-decoration:none;}
+header .icon a img{ margin-right:8px;}
 header #gNav{ float:right;}
 header #gNav ul{ display:table; border-right:1px solid #979797;}
 header #gNav ul li{ display:table-cell; border-left:1px solid #979797;}
@@ -74,15 +84,14 @@ header #gNav ul li.active span{ background:#4a4a4a; color:#fff;}
 
 
 
-
 /*
 
 FOOTER
 
 */
-footer{ margin:90px 0 0;}
+/*footer{ margin:0px 0 0;}*/
 footer .copyright{ float:left; padding-left:10px; font-size:11px;}
-footer #footer_in{ min-width:720px; max-width:1960px; margin:0 auto;}
+footer #footer_in{ min-width:720px; max-width:1960px; height:100%;}
 #lNav{ float:right;}
 #lNav ul li{ display:inline-block; width:auto; text-align:left; vertical-align:middle; padding:0 10px 0 0;}
 #lNav ul li.active{font-weight:bold;}
@@ -96,14 +105,16 @@ MAIN
 #main{ width:720px; margin:0 auto; padding:55px 10px 0; box-sizing:border-box;}
 
 
+
 /*
 
 TOP
 
 */
-#main.top{ min-width:720px; max-width:1960px; width:auto; margin:0 auto;}
-#main.top h1{ font-size:86px; color:#000; text-align:left; line-height:1.1; margin-left:50px;}
-.top .wiki{ margin:30px 0 0; position:relative;}
+/*#main{background-color: gray;}*/
+#main.top{ min-width:720px; max-width:1960px; width:auto; margin:0;}
+/*#main.top h1{ font-size:86px; color:#000; text-align:left; line-height:1.1; margin-left:50px;}*/
+.top .wiki{ margin:30px 0 10%; position:relative;}
 .top .wiki .txt{ position:absolute; bottom:105px; left:80px; color:#fff; font-size:8px; line-height:1.2;
 transform: rotate(339deg) ;
 -webkit-transform: rotate(339deg) ;
@@ -111,6 +122,8 @@ transform: rotate(339deg) ;
 -o-transform: rotate(339deg) ;
 -ms-transform: rotate(339deg) ;}
 .top .wiki .txt span{ float:right; font-size:8px; color:#fff;}
+.contents>svg{margin-left:7%;}
+
 
 
 /*
@@ -118,9 +131,13 @@ transform: rotate(339deg) ;
 SERVICE
 
 */
-.service .about{ font-size:20px; margin:10px 0 0;}
-.service #details{ padding:15px 0 0;}
-.service .detail{ margin:30px 0 0;}
+.service .about{ font-size:14px; margin:10px 0 0;text-align: center;}
+.service #details{ padding:15px auto 0; margin:auto; display: inline-block;}
+/*.service .detail{ margin:30px 30px 0;}*/
+/*.service .detail{display: inline-block; width:200px; height:200px; background-color: red;}*/
+.service .detail{display: inline-block;border:0.5px solid black;width:40%;float:left; height:155px; padding:1.8%;}
+.service .detail:nth-child(odd){margin:10px 1% 10px 4%;}
+.service .detail:nth-child(even){margin:10px 4% 10px 1%;}
 .service .detail .ttl{ border-bottom:1px solid #979797; padding:0;}
 .service .detail .ttl h2{ display:inline-block; font-size:24px; font-weight:bold; vertical-align:baseline;}
 .service .detail .ttl p{ display:inline-block; margin:0 0 0 15px; font-weight:bold; vertical-align:baseline; font-style:italic;}
@@ -131,7 +148,7 @@ SERVICE
 .detail .txt_price .left{ width:150px; font-size:20px; font-weight:bold; color:#000; line-height:1.1; vertical-align:baseline;}
 .detail .txt_price .left span{ font-size:80px; font-weight:bold; color:#000; line-height:1.1; vertical-align:baseline;}
 .detail .txt_price .left em{ font-size:40px; font-weight:bold; color:#000; line-height:1.1; vertical-align:baseline;}
-.detail .txt_price .right{ font-size:18px; padding:10px 0 0;}
+.detail .txt_price .right{ font-size:15px; padding:10px 0 0;}
 
 
 /*
@@ -155,15 +172,27 @@ input[type="submit"] {
 -webkit-appearance: none;
 border-radius: 0;
 }
-.btn{ margin:30px 0 0;}
+/*.btn{width:1000px;background-color: gray;display: inline-block;}*/
 .btn a,
 .btn button,
-.btn input{ display:block; width:178px; text-decoration:none; font-size:20px; background:#fff; font-weight:bold; border:1px solid #979797; padding:10px 0; text-align:center; margin:0 auto;}
+.btn input{ display:block; width:278px; text-decoration:none; font-size:20px; background:#fff; font-weight:bold; border:1px solid #979797; padding:10px 0; text-align:center; margin:0 auto 10px;}
 .btn a:hover,
 .btn button:hover,
 .btn input:hover{ color:#fff; background:#4a4a4a;}
+.test-btn{
+font-size:0.75em;
+display:block;
+width:100px;
+padding-top:10px;
+padding-bottom:10px;
+text-align:center;
+border:2px solid;
+margin:0 auto;
+border-color:#aaaaaa #444444 #444444 #aaaaaa;
+}
+
 /* privacy */
-.privacy{ display:block; background:#eee; border: 1px solid #979797; padding:10px 20px; margin:20px 0 0;}
+.privacy{ display:block; background:#eee; border: 1px solid #979797; padding:10px 20px; margin:20px 0 30px;}
 .privacy dt{ border-bottom:1px solid #979797; padding:0 0 5px;}
 .privacy dd{ padding:5px 0; border-bottom:1px solid #979797;}
 .privacy dd:last-child{ border-bottom:none; padding:5px 0 0; text-align:center;}
@@ -175,10 +204,10 @@ border-radius: 0;
 /* form */
 .input{ border:1px solid #979797; padding:5px 20px 15px; margin:20px 0 0;}
 .input:first-child{ margin:15px 0 0;}
-.input .ttl p{ font-size:24px; font-weight:bold;}
-.input .ttl span{font-size:18px; font-weight: normal;}
+.input .ttl p{ font-size:20px; font-weight:bold;}
+.input .ttl span{font-size:14px; font-weight: normal;}
 .input .form_i_txt,
-.input .form_ta{ vertical-align:top; width:360px; font-size:16px; margin:0; padding:5px 10px; border:1px solid #000;}
+.input .form_ta{ vertical-align:top; width:360px; font-size:16px; margin:0; padding:3px 10px; border:1px solid #000;}
 .input .form_i_txt{ }
 #form .input .form_ta{ height: 21px;
 	-moz-transition: height, 0.3s;
@@ -217,8 +246,10 @@ position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300p
 /* title */
 #colorbox h1,
 #main h1{ font-weight:bold; font-size:32px; text-align:center; margin:30px auto 0;}
+
 #colorbox h1 span,
 #main h1 span{ font-weight:bold; font-size:32px; border-bottom:5px solid #000;}
+
 
 /* colorbox */
 
