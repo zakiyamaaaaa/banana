@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>milenim</title>
+<meta name="description" content="トライアルリクエスト｜ミレニム">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="stylesheet" href="../css/style-sp.css">
+</head>
+<body>
+<div id="page">
+<header>
+	<div id="header_in" class="clearfix">
+		<a href="../" >
+			<img class="icon" src="../img/milenim-icon.png" width="210" height="auto" alt="logo">
+			<img class="logo" src="../img/milenim-logo.png" width="400" height="auto" alt="icon">
+		</a>
+	</div>
+</header>
+<div id="main" class="contact">
+	<div class="contents">
+		<section id="contact_form">
+		<h1><span>トライアル版リクエスト</span></h1>
+	    <div id="form"><form action="index_submit" method="get" accept-charset="utf-8">
+	    </form>
+		    <div class="input">
+		    	<div class="ttl">
+				    <p>お名前<span> (必須)</span></p>
+		        </div>
+		        <div>
+                	<p><em>名前</em><br><input class="form_i_txt" type="text" name="firstName" required /></p>
+                    <p class="mt10"><em>名字</em><br><input class="form_i_txt" type="text" name="lastName" required onblur='this.classList.add("focused")'/></p>
+                </div>
+		    </div><!-- /.input -->
+		    
+		    <div class="input">
+		    	<div class="ttl">
+				    <p>E-mail<span> (必須)</span></p>
+		        </div>
+		        <div>
+                	<p><input class="form_i_txt" type="text" name="mail" required onblur='this.classList.add("focused")' /></p>
+                    <p class="mt10"><em>メールアドレス<span>（確認用）</span></em><br><input class="form_i_txt" type="text" name="mail-confirm" required onblur='this.classList.add("focused")'/></p>
+                </div>
+		    </div><!-- /.input -->
+		    
+		    <div class="input">
+		    	<div class="ttl">
+				    <p>会社情報<span> (必須)</span></p>
+		        </div>
+		        <div>
+                	<p><em>会社名</em><br><input class="form_i_txt" type="text" name="companyName" required onblur='this.classList.add("focused")'/></p>
+                    <p class="mt10"><em>部署</em><br><input class="form_i_txt" type="text" name="department" required onblur='this.classList.add("focused")'/></p>
+                    <p class="mt10"><em>役職</em><br><input class="form_i_txt" type="text" name="position" required onblur='this.classList.add("focused")'/></p>
+                </div>
+		    </div><!-- /.input -->
+	        
+	        <dl class="privacy">
+	        	<dt>個人情報の取扱について</dt>
+	        	<dd>取得した個人情報については、当事務局からの各種ご連絡に利用させていただきます。
+なお、こちらの情報を第三者に渡すことはございません。</dd>
+	            <dd><label><input class="form_i_cb" type="checkbox" required />同意する</label></dd>
+	        </dl>
+		
+	        <p class="btn"><button id="btnConfirm" class="trial-btn">確認する</button></p>
+		</div><!-- /#form -->
+	</section>
+<div id="confirmModal" class="modal">
+	    <section id="inline_content">
+            <h1><span>送信内容の確認</span></h1>
+            <div id="form"><form action="./trial.php" method="post">
+				<input id="modal_first_name" type="hidden" name="first_name"/>
+				<input id="modal_last_name" type="hidden" name="last_name"/>
+				<input id="modal_mail" type="hidden" name="mail"/>
+				<input id="modal_company" type="hidden" name="company"/>
+				<input id="modal_department" type="hidden" name="department"/>
+				<input id="modal_position" type="hidden" name="position"/>
+
+			    <div class="input">
+			    	<div class="ttl">
+					    <p>お名前</p>
+			        </div>
+			        <div>
+	                	<p><em>名前</em><br><div class = "firstName-write">aaaaaaaaaaaa</div></p>
+	                    <p class="mt10"><em>名字</em><br><div class = "lastName-write">aaaaaaaaaaaa</div></p>
+	                </div>
+			    </div><!-- /.input -->
+			    
+			    <div class="input">
+			    	<div class="ttl">
+					    <p>E-mail</p>
+			        </div>
+			        <div>
+	                	<p><div class ="mail-write">aaaaaaaaaaaa</div></p>
+	                </div>
+			    </div><!-- /.input -->
+			    
+			    <div class="input">
+			    	<div class="ttl">
+					    <p>会社情報</p>
+			        </div>
+			        <div>
+	                	<p><em>会社名</em><div class="companyName-write"><br>aaaaaaaaaaaa</div></p>
+	                    <p class="mt10"><em>部署</em><br><div class="department-write">aaaaaaaaaaaa</div></p>
+	                    <p class="mt10"><em>役職</em><br><div class = "position-write">aaaaaaaaaaaa</div></p>
+	                </div>
+			    </div><!-- /.input -->
+                
+                <dl class="privacy">
+                    <dt>個人情報の取扱について</dt>
+                    <dd>取得した個人情報については、当事務局からの各種ご連絡に利用させていただきます。
+なお、こちらの情報を第三者に渡すことはございません。</dd>
+                    <dd class="fwB taL">同意する</dd>
+                </dl>
+                
+                <p class="btn"><input id="trial-submit" type="submit" value="送信"></p>
+			</form></div><!-- /#form -->
+	    </section>
+	</div>
+
+	</div>
+</div><!-- /#main -->
+<footer>
+<div id="footer_in" class="clearfix">
+	<p class="copyright">Copyright &copy; XXXXX All Rights Reserved.</p>
+</div><!-- /#footer_in -->
+</footer>
+</div>
+<script type="text/javascript" src="../js/trial/modal.js"></script>
+</body>
+</html>

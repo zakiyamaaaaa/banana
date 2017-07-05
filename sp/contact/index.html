@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>milenim</title>
+<meta name="description" content="トライアルリクエスト｜ミレニム">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="stylesheet" href="../css/style-sp.css">
+</head>
+<body>
+<div id="page">
+<header>
+	<div id="header_in" class="clearfix">
+		<a href="../" >
+			<img class="icon" src="../img/milenim-icon.png" width="210" height="auto" alt="logo">
+			<img class="logo" src="../img/milenim-logo.png" width="400" height="auto" alt="icon">
+		</a>
+	</div>
+</header>
+<div id="main" class="contact">
+<div class="contents">
+	<section id="contact_form">
+		<h1><span>お問い合わせ</span></h1>
+	    <div id="form">
+		    <div class="input">
+		    	<div class="ttl">
+				    <p>お名前<span> (必須)</span></p>
+		        </div>
+		        <div><input class="form_i_txt" type="text" name="name"></div>
+		    </div><!-- /.input -->
+		    
+		    <div class="input">
+		    	<div class="ttl">
+				    <p>E-mail<span> (必須)</span></p>
+		        </div>
+		        <div><input class="form_i_txt" type="text" name="mail"></div>
+		    </div><!-- /.input -->
+		    
+		    <div class="input">
+		    	<div class="ttl">
+				    <p>問い合わせ内容<span> (必須)</span></p>
+		        </div>
+	            <div><textarea class="form_ta" name="question"></textarea></div>
+		    </div><!-- /.input -->
+	        
+	        <dl class="privacy">
+	        	<dt>個人情報の取扱について</dt>
+	        	<dd>取得した個人情報については、当事務局からの各種ご連絡に利用させていただきます。
+なお、こちらの情報を第三者に渡すことはございません。</dd>
+	            <dd><label><input class="form_i_cb" height="1vw"type="checkbox">同意する</label></dd>
+	        </dl>
+		
+	        <p class="btn contact-btn"><button id="btnConfirm">確認する</button></p>
+		</div><!-- /#form -->
+	</section>
+
+    <div id="confirmModal" class="modal">
+	    <section id="inline_content">
+            <h1><span>送信内容の確認</span></h1>
+            <div id="form"><form action="./contact.php" method="post">
+				<input id="modal_name" type="hidden" name="name"/>
+				<input id="modal_mail" type="hidden" name="mail"/>
+				<input id="modal_question" type="hidden" name="question"/>
+                <div class="input">
+                    <div class="ttl">
+                        <p>お名前</p>
+                    </div>
+                    <div class="name-write"><p id="modal_name_show">aaaaaaaaaaaaa</p></div>
+                </div><!-- /.input -->
+                
+                <div class="input">
+                    <div class="ttl">
+                        <p>E-mail</p>
+                    </div>
+                    <div class="mail-write"><p id="modal_mail_show">aaaaaaaaaaaaa</p></div>
+                </div><!-- /.input -->
+                
+                <div class="input">
+                    <div class="ttl">
+                        <p>お問い合わせ内容</p>
+                    </div>
+                    <div class="question-write"><p id="modal_question_show">aaaaaaaaaaaaa</p></div>
+                </div><!-- /.input -->
+                
+                <dl class="privacy">
+                    <dt>個人情報の取扱について</dt>
+                    <dd>取得した個人情報については、当事務局からの各種ご連絡に利用させていただきます。
+なお、こちらの情報を第三者に渡すことはございません。</dd>
+                    <dd class="fwB taL">同意する</dd>
+                </dl>
+                
+                <p class="btn"><input type="submit" value="送信"></p>
+			</form></div><!-- /#form -->
+	    </section>
+	</div>
+</div><!-- /.contents -->
+</div>
+<footer>
+<div id="footer_in" class="clearfix">
+	<p class="copyright">Copyright &copy; XXXXX All Rights Reserved.</p>
+</div><!-- /#footer_in -->
+</footer>
+</div>
+<script type="text/javascript" src="../js/contact/modal.js"></script>
+</div>
+</body>
+</html>
