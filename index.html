@@ -6,9 +6,24 @@
 <title>milenim</title>
 <meta name="description" content="モバイルアプリmilenimのサービスページ">
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
-c
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.js"></script>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function () {
+    var ua = navigator.userAgent;
+    if (ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0) {
+    	console.log("this is sp")
+        // スマートフォン用コード
+        location.href = "./sp/index.html";
+    } else if (ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0) {
+        // タブレット用コード
+        console.log("tablet")
+    } else {
+        // PC用コード
+        console.log("this is pc")
+    }
+});
+	</script>
 <!-- <script type="text/javascript" src="./js/jquery.pjax.js"></script> -->
 <!-- <script type="text/javascript">
 
