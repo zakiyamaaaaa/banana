@@ -22,10 +22,11 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	line-height:1.5;
 	color:#4a4a4a;
 	font-family: Arial, Helvetica, sans-serif;
+	font-family: serif;
 	vertical-align: baseline;
 }
 
-html, body { height:100%;}
+/*html, body { height:100%;}*/
 /*body{height: 100%;}*/
 /*html{height: 100%;margin:0;}*/
 /*body{height: 100%;margin:0;}*/
@@ -34,6 +35,7 @@ html, body { height:100%;}
 SETUP
 
 */
+
 ul, ol { list-style: none;}
 img { border: none;}
 .clear { clear: both;}
@@ -79,14 +81,6 @@ header #gNav ul li span{ display:block; font-size:16px; padding:15px; text-decor
 header #gNav ul li:hover a,
 header #gNav ul li.active a,
 header #gNav ul li.active span{ background:#4a4a4a; color:#fff;}
-
-/*#page{
-	background-color:gray;
-	height:100%;
-	min-height:100%;
-	width:100%;
-	position: relative;
-}*/
 
 
 
