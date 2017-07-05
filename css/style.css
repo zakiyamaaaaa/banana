@@ -99,7 +99,7 @@ footer #footer_in{ min-width:720px; max-width:1960px; margin:0 auto;}
 MAIN
 
 */
-#main{ width:720px; margin:0; padding:55px 10px 0; box-sizing:border-box;}
+#main{ width:720px; margin:0 auto; padding:55px 10px 0; box-sizing:border-box;}
 
 
 /*
@@ -124,9 +124,9 @@ transform: rotate(339deg) ;
 SERVICE
 
 */
-.service .about{ font-size:20px; margin:10px 0 0;}
-.service #details{ padding:15px 0 0;}
-.service .detail{ margin:30px 0 0;}
+.service .about{ font-size:14px; margin:10px 0 0;text-align: center;}
+.service #details{ padding:15px auto 0; margin:auto 0;}
+.service .detail{ margin:30px 30px 0;}
 .service .detail .ttl{ border-bottom:1px solid #979797; padding:0;}
 .service .detail .ttl h2{ display:inline-block; font-size:24px; font-weight:bold; vertical-align:baseline;}
 .service .detail .ttl p{ display:inline-block; margin:0 0 0 15px; font-weight:bold; vertical-align:baseline; font-style:italic;}
@@ -164,7 +164,7 @@ border-radius: 0;
 .btn{ margin:30px 0 0;}
 .btn a,
 .btn button,
-.btn input{ display:block; width:178px; text-decoration:none; font-size:20px; background:#fff; font-weight:bold; border:1px solid #979797; padding:10px 0; text-align:center; margin:0 auto;}
+.btn input{ display:block; width:278px; text-decoration:none; font-size:20px; background:#fff; font-weight:bold; border:1px solid #979797; padding:10px 0; text-align:center; margin:0 auto;}
 .btn a:hover,
 .btn button:hover,
 .btn input:hover{ color:#fff; background:#4a4a4a;}
@@ -223,6 +223,7 @@ position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300p
 /* title */
 #colorbox h1,
 #main h1{ font-weight:bold; font-size:32px; text-align:center; margin:30px auto 0;}
+
 #colorbox h1 span,
 #main h1 span{ font-weight:bold; font-size:32px; border-bottom:5px solid #000;}
 
