@@ -75,26 +75,29 @@ $(document).pjax('a.pjax', {
     <div id="confirmModal" class="modal">
 	    <section id="inline_content">
             <h1><span>送信内容の確認</span></h1>
-            <div id="form"><form action="./contact.php" method="post_">
+            <div id="form"><form action="./contact.php" method="post">
+				<input id="modal_name" type="hidden" name="name"/>
+				<input id="modal_mail" type="hidden" name="mail"/>
+				<input id="modal_question" type="hidden" name="question"/>
                 <div class="input">
                     <div class="ttl">
                         <p>お名前</p>
                     </div>
-                    <div class="name-write"><p>aaaaaaaaaaaaa</p></div>
+                    <div class="name-write"><p id="modal_name_show">aaaaaaaaaaaaa</p></div>
                 </div><!-- /.input -->
                 
                 <div class="input">
                     <div class="ttl">
                         <p>E-mail</p>
                     </div>
-                    <div class="mail-write"><p>aaaaaaaaaaaaa</p></div>
+                    <div class="mail-write"><p id="modal_mail_show">aaaaaaaaaaaaa</p></div>
                 </div><!-- /.input -->
                 
                 <div class="input">
                     <div class="ttl">
                         <p>お問い合わせ内容</p>
                     </div>
-                    <div class="question-write"><p>aaaaaaaaaaaaa</p></div>
+                    <div class="question-write"><p id="modal_question_show">aaaaaaaaaaaaa</p></div>
                 </div><!-- /.input -->
                 
                 <dl class="privacy">
@@ -121,8 +124,7 @@ $(document).pjax('a.pjax', {
 	</nav>
 </div><!-- /#footer_in -->
 </footer>
+<script type="text/javascript" src="../js/contact/modal.js"></script>
 </div>
-<script type="text/javascript" src="../js/modal.js"></script>
-<script type="text/javascript" src="../js/confirm-form.js"></script>
 </body>
 </html>

@@ -87,7 +87,14 @@ $(document).pjax('a.pjax', {
     <div id="confirmModal" class="modal">
 	    <section id="inline_content">
             <h1><span>送信内容の確認</span></h1>
-            <div id="form"><form action="./">
+            <div id="form"><form action="./" method="post">
+				<input id="modal_first_name" type="hidden" name="first_name"/>
+				<input id="modal_last_name" type="hidden" name="last_name"/>
+				<input id="modal_mail" type="hidden" name="mail"/>
+				<input id="modal_company" type="hidden" name="company"/>
+				<input id="modal_department" type="hidden" name="department"/>
+				<input id="modal_position" type="hidden" name="position"/>
+
 			    <div class="input">
 			    	<div class="ttl">
 					    <p>お名前</p>
@@ -144,9 +151,6 @@ $(document).pjax('a.pjax', {
 </div><!-- /#footer_in -->
 </footer>
 </div>
-<script type="text/javascript" src="../../js/trial-request-confirm.js"></script>
-<!-- <script type="text/javascript" src="../../js/validation_trial.js"></script> -->
-<script type="text/javascript" src="../../js/modal.js"></script>
-<script type="text/javascript" src="../../js/post.js"></script>
+<script type="text/javascript" src="../../js/trial/modal.js"></script>
 </body>
 </html>
