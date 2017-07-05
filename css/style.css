@@ -24,6 +24,8 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	font-family: Arial, Helvetica, sans-serif;
 	vertical-align: baseline;
 }
+
+html, body { height:100%; margin:0; }
 /*
 
 SETUP
@@ -83,7 +85,8 @@ header #gNav ul li.active span{ background:#4a4a4a; color:#fff;}
 FOOTER
 
 */
-footer{ margin:90px 0 0;}
+/*footer{ margin:0px 0 0;}*/
+footer{margin-top: 30px; bottom: 0;width:100%;}
 footer .copyright{ float:left; padding-left:10px; font-size:11px;}
 footer #footer_in{ min-width:720px; max-width:1960px; margin:0 auto;}
 #lNav{ float:right;}
@@ -96,7 +99,7 @@ footer #footer_in{ min-width:720px; max-width:1960px; margin:0 auto;}
 MAIN
 
 */
-#main{ width:720px; margin:0 auto; padding:55px 10px 0; box-sizing:border-box;}
+#main{ width:720px; margin:0; padding:55px 10px 0; box-sizing:border-box;}
 
 
 /*
@@ -104,7 +107,7 @@ MAIN
 TOP
 
 */
-#main.top{ min-width:720px; max-width:1960px; width:auto; margin:0 auto;}
+#main.top{ min-width:720px; max-width:1960px; width:auto; margin:0;}
 #main.top h1{ font-size:86px; color:#000; text-align:left; line-height:1.1; margin-left:50px;}
 .top .wiki{ margin:30px 0 0; position:relative;}
 .top .wiki .txt{ position:absolute; bottom:105px; left:80px; color:#fff; font-size:8px; line-height:1.2;
