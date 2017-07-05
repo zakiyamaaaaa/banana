@@ -25,7 +25,10 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	vertical-align: baseline;
 }
 
-html, body { height:100%; margin:0; }
+html, body { height:100%;}
+/*body{height: 100%;}*/
+/*html{height: 100%;margin:0;}*/
+/*body{height: 100%;margin:0;}*/
 /*
 
 SETUP
@@ -77,6 +80,13 @@ header #gNav ul li:hover a,
 header #gNav ul li.active a,
 header #gNav ul li.active span{ background:#4a4a4a; color:#fff;}
 
+/*#page{
+	background-color:gray;
+	height:100%;
+	min-height:100%;
+	width:100%;
+	position: relative;
+}*/
 
 
 
@@ -86,9 +96,8 @@ FOOTER
 
 */
 /*footer{ margin:0px 0 0;}*/
-footer{margin-top: 30px; bottom: 0;width:100%;}
 footer .copyright{ float:left; padding-left:10px; font-size:11px;}
-footer #footer_in{ min-width:720px; max-width:1960px; margin:0 auto;}
+footer #footer_in{ min-width:720px; max-width:1960px; height:100%;}
 #lNav{ float:right;}
 #lNav ul li{ display:inline-block; width:auto; text-align:left; vertical-align:middle; padding:0 10px 0 0;}
 #lNav ul li.active{font-weight:bold;}
@@ -102,14 +111,16 @@ MAIN
 #main{ width:720px; margin:0 auto; padding:55px 10px 0; box-sizing:border-box;}
 
 
+
 /*
 
 TOP
 
 */
+/*#main{background-color: gray;}*/
 #main.top{ min-width:720px; max-width:1960px; width:auto; margin:0;}
-#main.top h1{ font-size:86px; color:#000; text-align:left; line-height:1.1; margin-left:50px;}
-.top .wiki{ margin:30px 0 0; position:relative;}
+/*#main.top h1{ font-size:86px; color:#000; text-align:left; line-height:1.1; margin-left:50px;}*/
+.top .wiki{ margin:30px 0 10%; position:relative;}
 .top .wiki .txt{ position:absolute; bottom:105px; left:80px; color:#fff; font-size:8px; line-height:1.2;
 transform: rotate(339deg) ;
 -webkit-transform: rotate(339deg) ;
@@ -117,6 +128,8 @@ transform: rotate(339deg) ;
 -o-transform: rotate(339deg) ;
 -ms-transform: rotate(339deg) ;}
 .top .wiki .txt span{ float:right; font-size:8px; color:#fff;}
+.contents>svg{margin-left:7%;}
+
 
 
 /*
@@ -128,7 +141,7 @@ SERVICE
 .service #details{ padding:15px auto 0; margin:auto; display: inline-block;}
 /*.service .detail{ margin:30px 30px 0;}*/
 /*.service .detail{display: inline-block; width:200px; height:200px; background-color: red;}*/
-.service .detail{display: inline-block;border:0.5px solid black;width:40%;float:left; height:170px; padding:1.8%;}
+.service .detail{display: inline-block;border:0.5px solid black;width:40%;float:left; height:155px; padding:1.8%;}
 .service .detail:nth-child(odd){margin:10px 1% 10px 4%;}
 .service .detail:nth-child(even){margin:10px 4% 10px 1%;}
 .service .detail .ttl{ border-bottom:1px solid #979797; padding:0;}
@@ -168,7 +181,7 @@ border-radius: 0;
 /*.btn{width:1000px;background-color: gray;display: inline-block;}*/
 .btn a,
 .btn button,
-.btn input{ display:block; width:278px; text-decoration:none; font-size:20px; background:#fff; font-weight:bold; border:1px solid #979797; padding:10px 0; text-align:center; margin:0 auto;}
+.btn input{ display:block; width:278px; text-decoration:none; font-size:20px; background:#fff; font-weight:bold; border:1px solid #979797; padding:10px 0; text-align:center; margin:0 auto 10px;}
 .btn a:hover,
 .btn button:hover,
 .btn input:hover{ color:#fff; background:#4a4a4a;}
@@ -185,7 +198,7 @@ border-color:#aaaaaa #444444 #444444 #aaaaaa;
 }
 
 /* privacy */
-.privacy{ display:block; background:#eee; border: 1px solid #979797; padding:10px 20px; margin:20px 0 0;}
+.privacy{ display:block; background:#eee; border: 1px solid #979797; padding:10px 20px; margin:20px 0 30px;}
 .privacy dt{ border-bottom:1px solid #979797; padding:0 0 5px;}
 .privacy dd{ padding:5px 0; border-bottom:1px solid #979797;}
 .privacy dd:last-child{ border-bottom:none; padding:5px 0 0; text-align:center;}
@@ -197,10 +210,10 @@ border-color:#aaaaaa #444444 #444444 #aaaaaa;
 /* form */
 .input{ border:1px solid #979797; padding:5px 20px 15px; margin:20px 0 0;}
 .input:first-child{ margin:15px 0 0;}
-.input .ttl p{ font-size:24px; font-weight:bold;}
-.input .ttl span{font-size:18px; font-weight: normal;}
+.input .ttl p{ font-size:20px; font-weight:bold;}
+.input .ttl span{font-size:14px; font-weight: normal;}
 .input .form_i_txt,
-.input .form_ta{ vertical-align:top; width:360px; font-size:16px; margin:0; padding:5px 10px; border:1px solid #000;}
+.input .form_ta{ vertical-align:top; width:360px; font-size:16px; margin:0; padding:3px 10px; border:1px solid #000;}
 .input .form_i_txt{ }
 #form .input .form_ta{ height: 21px;
 	-moz-transition: height, 0.3s;
